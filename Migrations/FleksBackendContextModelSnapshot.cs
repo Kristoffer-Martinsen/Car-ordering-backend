@@ -30,6 +30,10 @@ namespace fleks_backend.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Model")
                         .IsRequired()
                         .HasColumnType("text");

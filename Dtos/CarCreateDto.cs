@@ -28,5 +28,7 @@ namespace fleks_backend.Dtos
     [Required]
     public int? Price { get; set; }
     
+    [Required]
+    public string ImagePath { get; set; }
   }
 }

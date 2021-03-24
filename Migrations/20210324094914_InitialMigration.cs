@@ -18,7 +18,8 @@ namespace fleks_backend.Migrations
                     Transmission = table.Column<string>(type: "text", nullable: false),
                     Fuel = table.Column<string>(type: "text", nullable: false),
                     Storage = table.Column<int>(type: "integer", nullable: false),
-                    Price = table.Column<int>(type: "integer", nullable: false)
+                    Price = table.Column<int>(type: "integer", nullable: false),
+                    ImagePath = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {

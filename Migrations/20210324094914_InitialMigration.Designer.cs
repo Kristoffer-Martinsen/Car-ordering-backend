@@ -10,7 +10,7 @@ using fleks_backend.Data;
 namespace fleks_backend.Migrations
 {
     [DbContext(typeof(FleksBackendContext))]
-    [Migration("20210323175355_InitialMigration")]
+    [Migration("20210324094914_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,6 +29,10 @@ namespace fleks_backend.Migrations
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("Fuel")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ImagePath")
                         .IsRequired()
                         .HasColumnType("text");
 

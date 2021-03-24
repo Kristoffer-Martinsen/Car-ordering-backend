@@ -26,5 +26,8 @@ namespace fleks_backend.Models
     
     [Required]
     public int? Price { get; set; }
+
+    [Required]
+    public string ImagePath { get; set; }
   }
 }
