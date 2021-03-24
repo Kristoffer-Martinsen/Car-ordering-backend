@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using fleks_backend.Data;
@@ -9,9 +10,10 @@ using fleks_backend.Data;
 namespace fleks_backend.Migrations
 {
     [DbContext(typeof(FleksBackendContext))]
-    partial class FleksBackendContextModelSnapshot : ModelSnapshot
+    [Migration("20210324122002_AddedUsers")]
+    partial class AddedUsers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

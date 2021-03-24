@@ -11,5 +11,6 @@ namespace fleks_backend.Data
     }
 
     public DbSet<Car> Cars { get; set; }   
+    public DbSet<User> Users { get; set; }
   }
 }

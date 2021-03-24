@@ -10,7 +10,17 @@ namespace fleks_backend.Data
       throw new System.NotImplementedException();
     }
 
+    public void CreateUser(User user)
+    {
+      throw new System.NotImplementedException();
+    }
+
     public void DeleteCar(Car car)
+    {
+      throw new System.NotImplementedException();
+    }
+
+    public void DeleteUser(User user)
     {
       throw new System.NotImplementedException();
     }
@@ -63,6 +73,11 @@ namespace fleks_backend.Data
       return cars;
     }
 
+    public IEnumerable<User> GetAllUsers()
+    {
+      throw new System.NotImplementedException();
+    }
+
     public Car GetCarById(int id)
     {
       return new Car{
@@ -76,12 +91,22 @@ namespace fleks_backend.Data
       };
     }
 
+    public User GetUserById(int id)
+    {
+      throw new System.NotImplementedException();
+    }
+
     public bool SaveChanges()
     {
       throw new System.NotImplementedException();
     }
 
     public void UpdateCar(Car car)
+    {
+      throw new System.NotImplementedException();
+    }
+
+    public void UpdateUser(User user)
     {
       throw new System.NotImplementedException();
     }

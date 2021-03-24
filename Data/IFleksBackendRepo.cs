@@ -12,5 +12,12 @@ namespace fleks_backend.Data
     void CreateCar(Car car);
     void UpdateCar(Car car);
     void DeleteCar(Car car);
+
+
+    IEnumerable<User> GetAllUsers();
+    User GetUserById(int id);
+    void CreateUser(User user);
+    void UpdateUser(User user);
+    void DeleteUser(User user);
   }
 }
