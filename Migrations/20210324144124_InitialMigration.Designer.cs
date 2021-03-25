@@ -10,8 +10,8 @@ using fleks_backend.Data;
 namespace fleks_backend.Migrations
 {
     [DbContext(typeof(FleksBackendContext))]
-    [Migration("20210324122002_AddedUsers")]
-    partial class AddedUsers
+    [Migration("20210324144124_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

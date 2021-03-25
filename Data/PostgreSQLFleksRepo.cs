@@ -76,7 +76,7 @@ namespace fleks_backend.Data
 
     public bool SaveChanges()
     {
-      return (_context.SaveChanges() >=0 );
+      return (_context.SaveChanges() >= 0 );
     }
 
     public void UpdateCar(Car car)
