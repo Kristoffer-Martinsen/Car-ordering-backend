@@ -40,7 +40,7 @@ namespace fleks_backend.Controllers
 
         if(existingUser != null)
         {
-          return BadRequest(new RegistrationResponse() {
+          return Ok(new RegistrationResponse() {
             Errors = new List<string>() {
               "Email already registered"
             },
@@ -63,15 +63,14 @@ namespace fleks_backend.Controllers
         } 
         else 
         {
-          return BadRequest(new RegistrationResponse() {
+          return Ok(new RegistrationResponse() {
             Errors = isCreated.Errors.Select(x => x.Description).ToList(),
             Success = false
           });
         }
-
       }
 
-      return BadRequest(new RegistrationResponse() {
+      return Ok(new RegistrationResponse() {
         Errors = new List<string>() {
           "Invalid payload"
         },
@@ -89,7 +88,7 @@ namespace fleks_backend.Controllers
 
         if(existingUser == null)
         {
-          return BadRequest(new RegistrationResponse() {
+          return Ok(new RegistrationResponse() {
             Errors = new List<string>() {
               "Invalid login request"
             },
@@ -100,7 +99,7 @@ namespace fleks_backend.Controllers
 
         if(!isCorrect)
         {
-          return BadRequest(new RegistrationResponse() {
+          return Ok(new RegistrationResponse() {
             Errors = new List<string>() {
               "Invalid login request"
             },
@@ -115,7 +114,7 @@ namespace fleks_backend.Controllers
         });
       }
 
-      return BadRequest(new RegistrationResponse() {
+      return Ok(new RegistrationResponse() {
         Errors = new List<string>() {
           "Invalid payload"
         },
