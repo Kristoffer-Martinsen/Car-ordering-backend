@@ -4,7 +4,7 @@ Backend repo for car ordering web app
 <h1>Setup</h1>
 <ul>
 <li>Download PostgreSQL from <a href="https://www.postgresql.org/download/">Postgres</a></li>
-<li>Download fronent repo for thos project here: <a href="https://github.com/Kristoffer-Martinsen/CarOrdering">CarOrdering</a></li>
+<li>Download fronent repo for this project here: <a href="https://github.com/Kristoffer-Martinsen/CarOrdering">CarOrdering</a></li>
 <li>Create a user for your postgreSQL server </li>
 <li>In appsettings.json, change the connectionstring. "User ID" will be the name of the user you created and "Password" will be the password you chose</li>
 <li>In the folder of the project run "dotnet ef migrations add [nameOfMigration]" in the terminal</li>
